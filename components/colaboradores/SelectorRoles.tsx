@@ -84,7 +84,7 @@ export function SelectorRoles({ value, onChange, label = "Roles", disabled = fal
   }
 
   return (
-    <div ref={rootRef} className="relative">
+    <div ref={rootRef} className="relative z-20">
       <div className="mb-1 text-[11px] font-bold uppercase text-cubelo-blue">{label}</div>
 
       <button
@@ -98,7 +98,7 @@ export function SelectorRoles({ value, onChange, label = "Roles", disabled = fal
       </button>
 
       {open ? (
-        <div className="absolute left-0 top-[calc(100%+8px)] z-30 w-full rounded-lg border border-gray-200 bg-white p-2 shadow-xl">
+        <div className="absolute left-0 top-[calc(100%+8px)] z-[120] w-full rounded-lg border border-gray-200 bg-white p-2 shadow-xl">
           <div className="max-h-60 overflow-auto pr-1">
             {roles.length ? (
               roles.map((rol) => {

@@ -37,7 +37,7 @@ function Field({
 
 function Column({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+    <section className="overflow-visible rounded-lg border border-gray-200 bg-white shadow-sm">
       <div className="bg-[#1E2A6E] px-4 py-3 text-sm font-bold uppercase text-white">{title}</div>
       <div className="space-y-4 p-4">{children}</div>
     </section>
